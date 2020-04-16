@@ -37,6 +37,9 @@ class SimpleMapReduceApplicationTests {
 
 				.map(keyAndCount -> keyAndCount.getT1() + " => " + keyAndCount.getT2() + "; ").collectList().block();
 
+		for(String s: a){
+			System.out.println(s);
+		}
 	}
 
 	@Test
